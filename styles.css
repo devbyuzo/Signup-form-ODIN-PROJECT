@@ -1,0 +1,161 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Space Grotesk",sans-serif;
+}
+
+body{
+background:#0b0f1a;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+/* CONTAINER */
+
+.container{
+width:1100px;
+height:600px;
+background:#121826;
+border-radius:18px;
+overflow:hidden;
+display:flex;
+box-shadow:0 25px 60px rgba(0,0,0,0.6);
+}
+
+/* LEFT SIDE */
+
+.form-section{
+flex:1;
+padding:45px 60px;
+color:#cfd8ff;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:40px;
+}
+
+.logo{
+color:#7fd3ff;
+font-size:24px;
+font-weight:600;
+letter-spacing:1px;
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:#9aa4c5;
+font-size:14px;
+}
+
+nav a.active{
+color:#7fd3ff;
+border-bottom:2px solid #7fd3ff;
+padding-bottom:4px;
+}
+
+/* FORM */
+
+.form-box h2{
+font-size:34px;
+margin-bottom:25px;
+color:#7fd3ff;
+}
+
+label{
+font-size:13px;
+display:block;
+margin-bottom:6px;
+}
+
+input{
+width:100%;
+padding:11px 14px;
+border-radius:18px;
+border:1px solid #2c3553;
+background:#0f1526;
+color:white;
+margin-bottom:18px;
+outline:none;
+}
+
+input:focus {
+    border: 2px solid #7fd3ff;
+}
+
+/* PASSWORD ROW */
+
+.password-row{
+display:flex;
+gap:15px;
+}
+
+.input-wrap{
+position:relative;
+}
+
+input[type="password"]:user-invalid {
+    border: 2px solid red;
+}
+
+/* BUTTON */
+
+button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:20px;
+background:#7fd3ff;
+color:#0b0f1a;
+font-weight:600;
+cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+opacity:0.9;
+}
+
+.login-text{
+text-align:center;
+margin-top:15px;
+}
+
+.login-text a{
+color:#7fd3ff;
+text-decoration:none;
+}
+
+/* IMAGE SECTION */
+
+.image-section{
+flex:1;
+background-image:url("https://images.unsplash.com/photo-1631745817771-c768a2186184?q=100&w=1200&auto=format&fit=crop");
+background-size:cover;
+background-position:center;
+position:relative;
+}
+
+/* CREDIT */
+
+.credit{
+position:absolute;
+bottom:10px;
+left: 160px;
+font-size:12px;
+color:white;
+background:rgba(0,0,0,0.4);
+padding:6px 10px;
+border-radius:6px;
+}
+
+.credit a{
+color:#7fd3ff;
+text-decoration:none;
+}
